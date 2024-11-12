@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Examination</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="exam-container">
+        <div class="header">
+            <h1>Online Exam - <span id="subjectName">Sample Subject</span></h1>
+            <div class="timer">
+                <p>Time Left: <span id="timeLeft">00:00</span></p>
+            </div>
+        </div>
+
+        <div class="exam-body">
+            <!-- Question Pallet Section -->
+            <div class="question-pallet">
+                <h3>Question Pallet</h3>
+                <div id="questionPallet" class="pallet-container"></div>
+            </div>
+
+            <!-- Questions Section -->
+            <div class="questions">
+                <div id="questionContainer"></div>
+                <div class="navigation">
+                    <button id="prevBtn" onclick="prevQuestion()">Previous</button>
+                    <button id="nextBtn" onclick="nextQuestion()">Next</button>
+                    <button onclick="submitExam()">Submit Exam</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
